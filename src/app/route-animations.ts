@@ -24,11 +24,11 @@ function slideTo(direction) {
       })
     ], optional),
     query(':enter', [
-      style({ [direction]: '-100%'})
+      style({ [direction]: '-150%'})
     ]),
     group([
       query(':leave', [
-        animate('1200ms ease', style({ [direction]: '100%'}))
+        animate('900ms ease', style({ [direction]: '150%'}))
       ], optional),
       query(':enter', [
         animate('1200ms ease', style({ [direction]: '0%'}))
