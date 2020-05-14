@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="buttons">
+        <ul>
+            <li>
+                <button type="button" class="btn btn-outline-secondary">
+                    <a [routerLink]="['/home']" [routerLinkActive]="['actived']">Home</a>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-outline-secondary">
+                    <a [routerLink]="['/about']" [routerLinkActive]="['actived']">About</a>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-outline-secondary">
+                    <a [routerLink]="['/portfolio']" [routerLinkActive]="['actived']">Portfolio</a>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-outline-secondary">
+                    <a [routerLink]="['/contact']" [routerLinkActive]="['actived']">Contact</a>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="router" [@animRoutes]="getPage(outlet)">
+        <router-outlet #outlet="outlet">
+            
+        </router-outlet>
+    </div>
+</div>
