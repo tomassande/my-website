@@ -1,3 +1,4 @@
+import { UploadComponent } from './components/portfolio/upload/upload.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'home',component: ProfileComponent, data: {animation: 'home'}},
   {path:'about',component: AboutComponent, data: { animation: 'about' }},
   {path:'portfolio',component: PortfolioComponent, data: { animation: 'portfolio' }},
-  {path:'contact',component: ContactComponent, data: { animation: 'contact' }}
+  {path:'contact',component: ContactComponent, data: { animation: 'contact' }},
+  {path:'upload',component: UploadComponent}
 ];
 
 @NgModule({

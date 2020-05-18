@@ -2,30 +2,28 @@
     <div class="buttons">
         <ul>
             <li>
-                <button type="button" class="btn btn-outline-secondary">
-                    <a [routerLink]="['/home']" [routerLinkActive]="['actived']">Home</a>
-                </button>
+                <a [routerLink]="['/home']" [routerLinkActive]="['actived']">
+                    <button type="button" class="btn btn-outline-secondary">Home</button>
+                </a>
             </li>
             <li>
-                <button type="button" class="btn btn-outline-secondary">
-                    <a [routerLink]="['/about']" [routerLinkActive]="['actived']">About</a>
-                </button>
+                <a [routerLink]="['/about']" [routerLinkActive]="['actived']">
+                    <button type="button" class="btn btn-outline-secondary">About</button>
+                </a>
             </li>
             <li>
-                <button type="button" class="btn btn-outline-secondary">
-                    <a [routerLink]="['/portfolio']" [routerLinkActive]="['actived']">Portfolio</a>
-                </button>
+                <a [routerLink]="['/portfolio']" [routerLinkActive]="['actived']">
+                    <button type="button" class="btn btn-outline-secondary">Portfolio</button>
+                </a>
             </li>
             <li>
-                <button type="button" class="btn btn-outline-secondary">
-                    <a [routerLink]="['/contact']" [routerLinkActive]="['actived']">Contact</a>
-                </button>
+                <a [routerLink]="['/contact']" [routerLinkActive]="['actived']">
+                    <button type="button" class="btn btn-outline-secondary">Contact</button>
+                </a>
             </li>
         </ul>
     </div>
     <div class="router" [@animRoutes]="getPage(outlet)">
-        <router-outlet #outlet="outlet">
-            
-        </router-outlet>
+        <router-outlet #outlet="outlet"></router-outlet>
     </div>
 </div>
