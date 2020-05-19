@@ -25,6 +25,11 @@ export class ProjectService{
         return this._http.post(this.url+'save-project',params,{headers: headers});
     }
 
+    listProjects():Observable<any>{
+        let headers=new HttpHeaders().set("Content-Type","application/json");
+
+        return this._http.get(this.url+'list-projects',{headers: headers});
+    }
 
 
 }

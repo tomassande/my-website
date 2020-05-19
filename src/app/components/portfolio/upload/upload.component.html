@@ -1,31 +1,33 @@
 <div class="upload-container">
-    <form class="contact-form" #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="name"></label>
-            <input type="text" class="form-control" id="name" name="name" #name="ngModel" [(ngModel)]="project.name" placeholder="Project Name*"required/>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="description"></label>
-            <input type="text" class="form-control" id="description" name="description" #description="ngModel" [(ngModel)]="project.description" placeholder="Description*"required/>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="year"></label>
-            <input type="number" class="form-control" id="year" name="year" #year="ngModel" [(ngModel)]="project.year" placeholder="Year*" required/>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="link"></label>
-            <input type="text" class="form-control" id="link" name="link" #link="ngModel" [(ngModel)]="project.link" placeholder="Link (GitHub Repository)*"required/>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="langs"></label>
-            <input type="text" class="form-control" id="langs" name="langs" #langs="ngModel" [(ngModel)]="project.langs" placeholder="Used languages*" required/>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="image"></label>
-            <input type="file" class="form-control" id="image" name="image" placeholder="Upload an image" (change)="fileChangeEvent($event)"/>
-          </div>
+  <div class="upload-main">
+    <form class="upload-form" #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="name"></label>
+          <input type="text" class="form-control" id="name" name="name" #name="ngModel" [(ngModel)]="project.name" placeholder="Project Name*"required/>
         </div>
-        <button type="submit" class="btn2 btn-primary">Upload Project</button>
-      </form>
+        <div class="form-group col-md-6">
+          <label for="description"></label>
+          <input type="text" class="form-control" id="description" name="description" #description="ngModel" [(ngModel)]="project.description" placeholder="Description*"required/>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="year"></label>
+          <input type="number" class="form-control" id="year" name="year" #year="ngModel" [(ngModel)]="project.year" placeholder="Year*" required/>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="link"></label>
+          <input type="text" class="form-control" id="link" name="link" #link="ngModel" [(ngModel)]="project.link" placeholder="Link (GitHub Repository)*"required/>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="langs"></label>
+          <input type="text" class="form-control" id="langs" name="langs" #langs="ngModel" [(ngModel)]="project.langs" placeholder="Used languages*" required/>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="image"></label>
+          <input type="file" class="form-control" id="image" name="image" placeholder="Upload an image" (change)="fileChangeEvent($event)"/>
+        </div>
+      </div>
+      <button type="submit" class="btn2 btn-primary">Upload Project</button>
+    </form>
+  </div>
 </div>

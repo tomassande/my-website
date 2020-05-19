@@ -1,21 +1,28 @@
 <div class="portfolio-container">
-    <h1>PORTFOLIO</h1>
     <div class="portfolio-main">
-        <h1>Portfolio</h1>
-    
-        <h3>Portfolio</h3>
-        
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+        <h1>
+            <span class="portfolio-main-h1-1">PO</span>RTFOLIO</h1>
+        <div class="wrapper">
+            <div *ngFor="let project of projects" class="portfolio-project">
+                <div class="portfolio-project-image">
+                    <img src="{{url+'get-image/'+project.image}}" *ngIf="project.image" class="image"/>
+                    <div class="middle">
+                        <div class="text">
+                            <h3>{{project.name}}</h3>
+                            <p>{{project.description}} - {{project.year}}</p>
+                            <h6>({{project.langs}})</h6>
+                            <a href="{{project.link}}">{{project.link}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</div>   
 
 
-<section class="portfolio-container">
-    <div class="portfolio-main">
+<section class="portfolio-container-upload">
+    <div class="portfolio-main-upload">
         <a [routerLink]="['/upload']" [routerLinkActive]="['actived']">
             <button type="submit" class="btn2 btn-primary">Upload Project</button>
         </a>
