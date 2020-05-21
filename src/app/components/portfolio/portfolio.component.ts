@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css'],
-  providers: [ProjectService]
+  providers: [ProjectService],
+  styles: ['.footer { position: sticky; }']
 })
 export class PortfolioComponent implements OnInit {
 

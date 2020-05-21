@@ -28,8 +28,6 @@ body{
     align-items: stretch;
 }
 
-
-
 /* ABOUT*/
 
 .about-container{
@@ -46,7 +44,6 @@ body{
     color: white;
     background-color: transparent;
     float: right;
-    padding-top: 50px;
     padding-bottom: 50px;
     margin-top: 50px;
     border: 3px solid #878787;
@@ -56,7 +53,16 @@ body{
     box-shadow: 10px 10px 18px -1px rgba(135,135,135,0.66);
 }
 
+.about-me h1{
+    text-align: center;
+}
+
+.about-me-h1-1{
+    color: rgb(90, 115, 192);
+}
+
 .about-me p{
+    font-size: 18px;
     text-align: justify;
 }
 
@@ -310,6 +316,7 @@ body{
     background-color: transparent;
     padding-bottom: 50px;
     margin-top: 50px;
+    margin-bottom: 50px;
     border: 3px solid #878787;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     -webkit-box-shadow: 10px 10px 18px -1px rgba(135,135,135,0.66);
@@ -376,6 +383,7 @@ body{
 }
 
 .portfolio-container-upload{
+    display: none;
     padding-top: 20px;
     width: 100%;
 }
@@ -446,7 +454,6 @@ body{
     text-align: left;
     width: 90%;
     height: 590px;
-    position: absolute;
     border-radius: 6px;
     color: white;
     background-color: transparent;
@@ -458,6 +465,8 @@ body{
     -webkit-box-shadow: 10px 10px 18px -1px rgba(135,135,135,0.66);
     -moz-box-shadow: 10px 10px 18px -1px rgba(135,135,135,0.66);
     box-shadow: 10px 10px 18px -1px rgba(135,135,135,0.66);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-container h1{
@@ -475,7 +484,6 @@ body{
 
 .input-group {
     width: 100%;
-    display: block;
     padding-right: 15px;
     padding-left: 15px;
     min-height: 30px;
@@ -485,6 +493,7 @@ body{
 .input-group-textarea{
     min-height: 300px;
     width: 100%;
+    color: #555;
 }
 
 .contact-contacts{
@@ -526,13 +535,20 @@ body{
     color: #878787;
 }
 
+/*HR*/
+
+hr {
+    height: 3px;
+    width: 5%;
+    background-color: rgb(90, 115, 192);
+    border-top: 0px;
+}
+
 /*FOOTER*/
 
-footer{
-    width: 100%;
-    margin-top: 50px;
+.footer{
     text-align: center;
     position: fixed;
     bottom: 0px;
+    width: 100%;
 }
-

@@ -33,11 +33,6 @@ var controller={
 
             return res.status(200).send({project: projectStored});
         });
-        /*
-        return res.status(200).send({
-            project: project,
-            message: "Metodo saveProject"
-        });*/
     },
 
     getProject : function(req,res){
@@ -126,6 +121,7 @@ var controller={
             }
         });
     }
+
 
 };
 

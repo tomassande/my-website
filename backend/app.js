@@ -8,6 +8,7 @@ var app=express();
 //Cargar Archivos de Rutas
 
 var project_routes=require('../backend/routes/project');
+var files_routes=require('../backend/routes/files');
 
 
 //Middlewares
@@ -26,10 +27,10 @@ app.use((req, res, next) => {
     next();
 });
 
-
 //RUTAS
 
 app.use('/api',project_routes);
+app.use('/api',files_routes);
 
 //export
 
