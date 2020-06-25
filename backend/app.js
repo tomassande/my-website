@@ -32,6 +32,19 @@ app.use((req, res, next) => {
 app.use('/api',project_routes);
 app.use('/api',files_routes);
 
+//CONEXION ATLAS
+
+
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://dbadmin:1q2w3e4r!@cluster0-azwgc.mongodb.net/test?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("test").collection("my-website-portfolio");
+  // perform actions on the collection object
+  client.close();
+});
+
+
 //export
 
 module.exports=app;
