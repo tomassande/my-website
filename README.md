@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # MyWebsite
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
@@ -30,3 +31,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # my-website
 Tomas Sande's Angular Website
 >>>>>>> 06b1eff7d6f2ee6431c9f9fe54f86218692ddc87
+=======
+# my-website
+>>>>>>> f403a62dd8af49c24397260be1630ab2d02a62e4
