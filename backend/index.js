@@ -3,7 +3,7 @@
 var mongoose=require('mongoose');
 var app=require('./app');
 var port=3705;
-const username='';
+/*const username='';*/
 
 mongoose.Promise= global.Promise;
 mongoose.connect('mongodb://localhost:27017/my-website-portfolio')
@@ -17,5 +17,5 @@ mongoose.connect('mongodb://localhost:27017/my-website-portfolio')
             .catch(err => console.log(err));
 
 
-username = process.argv[2].split('=')[1];
-console.log(`Hello, ${username}`);
+/*username = process.argv[2].split('=')[1];
+console.log(`Hello, ${username}`);*/
